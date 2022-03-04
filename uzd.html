@@ -5,11 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Do stuff</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
     <script src="./js/sortAcc.js" defer></script>
+    <style>
+      .acc__text {
+        display: none;
+      }
+      .acc__title {
+        border-bottom: 1px solid #000;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <h1>We traverse the DOM</h1>
 
     <button>Sort <span>ASC</span></button>
+
+    <div class="accordion">
+      <h3 class="acc__title">Question 1</h3>
+      <p class="acc__text"
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cumque, reprehenderit facilis nulla sapiente
+        commodi accusantium officia? Repellendus, nisi est.</p
+      >
+      <h3 class="acc__title">Question 2</h3>
+      <p class="acc__text"
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cumque, reprehenderit facilis nulla sapiente
+        commodi accusantium officia? Repellendus, nisi est.</p
+      >
+    </div>
   </body>
 </html>
