@@ -9,32 +9,37 @@
     <script src="./js/sortAcc.js" defer></script>
     <style>
       .acc__text {
-        display: none;
+        /* display: none; */
+        height: 0;
+        overflow: hidden;
+        transition: height 0.2s ease-in-out;
       }
       .acc__title {
         border-bottom: 1px solid #000;
         cursor: pointer;
+      }
+      .show {
+        /* display: block; */
+        height: auto;
       }
     </style>
   </head>
   <body>
     <h1>We traverse the DOM</h1>
 
-    <button>Sort <span>ASC</span></button>
+    <button id="sort-btn">Sort <span>ASC</span></button>
 
     <div class="accordion">
       <h3 class="acc__title">Question 1</h3>
-      <p class="acc__text"
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cumque, reprehenderit facilis nulla sapiente
-        commodi accusantium officia? Repellendus, nisi est.</p
-      >
+      <p class="acc__text">Lorem ipsum dolor sit amet consectetur </p>
       <h3 class="acc__title">Question 2</h3>
       <p class="acc__text"
         >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cumque, reprehenderit facilis nulla sapiente
-        commodi accusantium officia? Repellendus, nisi est.</p
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cumque, reprehenderit facilis nulla sa commodi
+        accusantium officia? Repellendus, nisi est.</p
       >
       <h3 class="acc__title">Question 3</h3>
-      <p class="acc__text"
+      <p class="acc__text show"
         >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cumque, reprehenderit facilis nulla sapiente
         commodi accusantium officia? Repellendus, nisi est.</p
       >
